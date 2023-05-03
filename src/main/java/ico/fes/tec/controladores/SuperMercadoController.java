@@ -40,7 +40,7 @@ public class SuperMercadoController {
 
     @GetMapping("/reporte/balance")
     public ResponseEntity<String> getReporteBalance(){
-        return new ResponseEntity<>(("La ganancia de las peliculas rentadas es "+(SM.getVentas())*20), HttpStatus.OK);
+        return new ResponseEntity<>(("La ganancia de los productos vendidos es "+(SM.getVentas())*20), HttpStatus.OK);
     }
     @GetMapping("/reporte/bitacora")
     public ResponseEntity<ArrayList<Reporte>> getReporteBitacora(){
